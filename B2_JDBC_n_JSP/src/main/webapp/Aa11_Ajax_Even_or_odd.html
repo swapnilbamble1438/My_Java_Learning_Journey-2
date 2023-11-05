@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<script>
+function callserver()
+{
+	const xhttp = new XMLHttpRequest();
+	xhttp.onload = function()
+	{
+		document.getElementById("output").innerHTML =
+			this.responseText;
+	}
+	 var url="Aa11_Ajax_Even_or_odd.jsp?no="+document.getElementById('no').value;
+	  console.log(url);
+	  xhttp.open("GET", url, true);
+	  xhttp.send();	
+}
+</script>
+<body>
+	Enter number <input type = "number" name = "no" id = "no">
+	<br>
+	<input type = "button" value = "Evenorodd" onclick = "callserver()">
+	<br>
+	<div id = "output"></div>
+
+</body>
+</html>

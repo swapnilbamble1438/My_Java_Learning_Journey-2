@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+ <link rel = "stylesheet"
+    href = "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    
+    <script>
+    function Insert()
+    {
+    	const xhttp = new XMLHttpRequest();
+		  xhttp.onload = function() {
+		    document.getElementById("output").innerHTML = this.responseText;
+		    }
+		  var url= "Aa13_Insert.jsp?j1=" + document.getElementById('h1').value;
+		  url += "&j2=" + document.getElementById('h2').value;
+		  url += "&j3=" + document.getElementById('h3').value;
+		  url += "&j4=" + document.getElementById('h4').value;
+		  url += "&j5=" + document.getElementById('h5').value;
+		  console.log(url);
+		  xhttp.open("GET", url, true);
+		  xhttp.send();	
+    }
+    function Display()
+    {
+    	const x = new XMLHttpRequest();
+    	x.onload = function()
+    	{
+    		document.getElementById("demo").innerHTML = this.responseText;
+    	}
+    	var url = 'Aa13_Display.jsp'
+    	x.open("GET", url, true);
+    	x.send();
+    }
+    
+    
+    
+    </script>
+</head>
+
+<body>
+	
+            
+                <div class = "container">
+                  <center>
+                    <div class = "row align-items-center border">
+
+                        <div class = " col-lg-3 col-md-4 align-self-center">
+                            <h1>Sign Up</h1>
+                            <img src="Images/Signup.jpg" alt=Avatar height="150px" style="border-radius:50%"> <br></br>
+                        </div>
+                        
+                         <div class = " col-lg-3 col-md-4 align-self-center">
+                            <label for="no"><b>Number</b></label> <br>
+                        	<input type = "number" placeholder = "Enter Any Number" name = "Number" 
+							id = "h1" class="form-control" required>
+                        </div>
+                       
+                        <div class = " col-lg-3 col-md-4 align-self-center">
+                            <label for="name"><b>Name</b></label> <br>
+                            <input type="text" placeholder="Enter Name" name="Name" 
+							id = "h2" class="form-control" required>
+                        </div>
+                        
+                        <div class = " col-lg-3 col-md-4 align-self-center">
+                            <label for="email"><b>Email Id</b></label> <br>
+                            <input type="email" placeholder="Enter Email Id" name="Email_Id" 
+							id = "h3" class="form-control" required> 
+                        </div>
+
+                        <div class = " col-lg-3 col-md-4 align-self-center">
+                            &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+                            &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+                        </div>
+                        
+                        <div class = " col-lg-3 col-md-4 align-self-center">
+                            <label for="state"><b>Enter State</b></label> <br>
+                            <input type="text" placeholder="Enter State" name="State" 
+							id = "h4" class="form-control" required>
+                        </div>
+                        
+                        <div class = " col-lg-3 col-md-4 align-self-center">
+                            <label for="city"><b>Enter City</b></label> <br>
+                            <input type="text" placeholder="Enter City" name="City" 
+							id = "h5" class="form-control" required>
+                        </div>
+     				
+                        <div class = " col-lg-3 col-md-4 align-self-center">
+                         	<br>
+                            <button onclick = "Insert()" class = "btn btn-primary"> Insert Record </button>
+                            <br>
+                            <br>
+                            <button onclick = "Display()" class = "btn btn-success">Display All Records</button>
+                       		<br>
+                        </div>
+                        <br>
+                        <hr>
+                        <div id = "output"></div>
+                        <br>
+                        <div id = "demo"></div>
+
+                          
+                    </div>
+                  </center>
+                </div>
+            
+            
+            
+                
+           
+           
+</body>
+</html>
