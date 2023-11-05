@@ -1,0 +1,12 @@
+web.xml:
+
+-> Also known as "Deployment Descriptor" file
+
+Which servlet is to be executed on the client request
+is provided in web.xml file.
+In web.xml we provide servlet mapping or configuration
+
+Nowadays we use annotation and now it is not compulsary 
+to create web.xml file.
+
+

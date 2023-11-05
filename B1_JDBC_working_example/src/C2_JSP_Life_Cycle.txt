@@ -1,0 +1,19 @@
+JSP Life Cycle:
+
+1. Translation:
+
+ JSP page converts to servlet
+
+2. Compilation:
+
+    servlet code convert to byte code or .class file
+
+3. loading & instantiation:
+
+	.class file is loaded on server
+	& jsp object is created
+
+4. Initialization: jspInit()
+
+5. Request Handling
+

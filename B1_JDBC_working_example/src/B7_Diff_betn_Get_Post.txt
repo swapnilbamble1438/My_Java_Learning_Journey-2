@@ -1,0 +1,32 @@
+Get & Post
+Get & Post are Http methods.
+
+Http methods define the specific actions that can
+be performed on the resources like Java or 
+Servlet file, Image file, Document file etc.
+
+i)GET method sends data through
+the resource URL and thus it is
+not secured...
+ii)Get is slightly faster because the
+values are sent in the header
+iii)We can send very less data in case of
+Get request because it adds the data to the
+url and the length of a url is limited
+(maximum url length is 2048 characters)
+iv) in get case use doGet() method
+
+
+i)POST method sends data through
+the HTTP message body and thus
+it is more secured...
+ii)Post is slightly slow because the
+values are sent in the request body,
+in the format that the content type
+specifies.
+iii)We can send huge amount of data in
+case of Post request, there is no restriction
+iv) in post case use doPost() method
+
+
+

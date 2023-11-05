@@ -1,0 +1,22 @@
+JDBC is used to connect our application to Database
+using JDBC API.
+
+Java App---------JDBC Driver------DB
+
+Java App has its own language
+and DB has its own language so to make both
+understands each other language we use JDBC 
+like a translator to make communication between them.
+
+
+Steps for DB connection 
+1) load & register driver -> Class.forName("com.mysql.cj.jdbc.Driver");
+2) create connection -> Drivermanager.getConnection("url","username","password");
+			url: jdbc:mysql://localhost:3306/db.name
+			username: root
+			password: root
+3) create statement/prepare statement -> PreparedStatement ps = con.prepareStatement("sqlquery");
+
+4) execute SQL statement -> ps.executeQuery(); // select query
+5) process the result -> ps.executeUpdate(); // insert,update,delete query
+6) close the connection -> ps.close, con.close();

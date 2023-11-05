@@ -1,0 +1,17 @@
+Lifecycle of Servlet:
+
+1) loading & instantiation
+ -> when server is started, servlet class is loaded
+in the memory & servlet object is created.
+2) Initialization : init()
+-> servlet object will be initialized by invoking init()
+method
+3) Request Handling: service()
+-> service() method handles backend method.
+it will handle or serve the client request.
+In this phase service() method will be
+invoked.
+4) Destroy : destroy()
+->When the server is shut-down,
+destroy() method will be excecuted 
+& servlet object will be deleted

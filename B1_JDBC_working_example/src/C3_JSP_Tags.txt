@@ -1,0 +1,66 @@
+JSP Tags:
+There are three types of tags in JSP
+
+
+1) Scripting Tags: 
+<%  %>
+Scription Tags are used to embed Java code within
+the JSP Page.
+
+There are three types of Scriplet Tags:
+i) Scriplet tag 
+	<% java code %>
+It is used to embed java code directly into
+the jsp page. It allows you to write java statements,
+perform computations and manipulate within
+the Jsp. local level (inside jsp lifecycle)
+
+ii)Declaration tag
+	<%! field or method declaration %>
+The declaration tag is used to define variables,
+methods and other declarations. class level
+
+iii) Expression tag
+	<%= statement %>
+It is used to evaluate an expression and
+directly output its result within the Jsp page.
+	
+
+
+
+======================================================================================
+2) Directive Tags:
+<%@ %>
+Directive tags are used to provide instructions or
+directives to the JSP container on how to handle
+the JSP page during compilation and execution
+
+There are three types of directive tags:
+i) Page Directive
+	<%@ page attribute="value" %>
+ii)Include Directive
+	<%@ include file="resourceName" %>
+iii) Taglib Directive
+	<%@ taglib uri="" prefix="" %>
+
+
+=======================================================================================
+3) Action Tags:
+<jsp: />
+Action Tags are used to perform specific actions or 
+operations within the JSP page. Action tags provide
+a way to interact with Java object, control flow, and perform
+actions like forwarding, including other resources, and
+manipulating session attributes.(including page)
+
+There are three types of Action tags:
+i) Include tags
+	<jsp:include %>
+ii) forward tags:
+	<jsp:forward %>
+iii) Beans Action tags:
+	<jsp: useBean %>
+	<jsp: getProperty %>
+	<jsp: setProperty %>
+	etc.
+

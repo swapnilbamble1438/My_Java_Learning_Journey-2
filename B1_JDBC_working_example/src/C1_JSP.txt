@@ -1,0 +1,63 @@
+JSP
+
+previously we do frontend work in servlet only.
+and it was very difficult to design any html page 
+inside servlet.
+so backend and frontend was in the 
+same servlet file so it was not a good practice
+for big projects. thus Jsp was introduced.
+JSP is also server side technology 
+which is used to create dynamic web page.
+so we can provide backend in servlet and
+frontend in jsp so nowaday project creation is 
+become easy because of Jsp.
+JSP is an advance part of servlet.
+
+
+inside servlet we embed html code 
+using out.println("<h1>Hii</h1>");
+
+inside jsp we embed java code
+using JSP Tags.
+
+
+=========================================================================
+
+JSP points to remember:
+-> Jsp stands for Java server pages
+-> Jsp is a server side technology which is used to create
+dynamic web pages
+-> Jsp is an advanced version of servlet technology
+-> to embe java code in JSP, we can use below tags:
+
+1. Scriplet Tag: <% some Java code %>
+2. Expression Tag: <%= an expression %>
+3. Declartion Tag: <%! variable declaration & method definition %>
+4. Directive Tag: <%@ directives %>
+5. Comment Tag: <%- any Text -%>
+6. Action Tags: <jsp: actionName />
+
+==============================================================================
+
+Difference between Servlet & JSP:
+-> Servlet is a java code.
+   JSP is a HTML-based code.
+
+-> It is hard to write code in Servlet.
+   It's easier to code in JSP compared to servlets.
+
+-> Servlets run faster than JSP.
+   Jsp runs slower than servlet as it takes time to
+   compile the program and convert into servlets.
+
+-> In MVC architecture, servlets works as a controller.
+   In MVC architecture, JSP works as a view for displaying
+   output.
+
+-> Servlet can accept all protocol requests, including HTTP.
+   Jsp can only accept HTTP requests.
+
+-> Modification in Servlet file is a time consuming due
+   to reloading, recompliling, and restarting the server.
+   JSP modification is fast, as you just need to click one
+   refresh button.

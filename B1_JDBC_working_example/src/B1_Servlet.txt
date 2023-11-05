@@ -1,0 +1,31 @@
+Servlet:
+Servlet is a Server-Side Technology which is used to 
+-handle the client request, (Browsers are the client)
+-process the request and 
+-genearte the dynamic response.
+
+Server:
+A Server is a software or hardware device that accpets
+and responds to requests made over a network by the
+client
+
+There are two types of server:
+1) Web server:
+eg. Apache Tomcat, Glassfish, Jetty
+2) Application Server:
+eg. JBoss,Webpage,IBM WebSphere
+
+Server containers containers
+like
+Servlet Container
+JSP Container
+Security Container
+WebSocket Container
+JnDI container
+
+Servlet container will manage Servlet file,
+it accepts the request from client and generate
+the dynamic response and sent it to client.
+
+Server-side Technology:
+e.g JSP, Spring, Springboot, Struts,JSF,PHP,Python
