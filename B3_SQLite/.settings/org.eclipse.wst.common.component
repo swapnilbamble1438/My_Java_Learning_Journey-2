@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+            
+    
+    <wb-module deploy-name="B3_SQLite">
+                        
+        
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+                        
+        
+        <property name="java-output-path" value="/B3_SQLite/bin"/>
+        <property name="context-root" value="B3_SQLite"/>
+                    
+    
+    </wb-module>
+        
+
+</project-modules>
