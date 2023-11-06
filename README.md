@@ -1,2 +1,2 @@
 # MyJavaJourney2
-Advance Java, J2EE - JDBC, Servlet, JSP
+Advance Java - JDBC, Servlet, JSP, J2EE
