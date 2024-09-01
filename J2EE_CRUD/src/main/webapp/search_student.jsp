@@ -30,12 +30,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Search Student</title>
-	<style>
 	
-		.agent-search_inputs_div{ display: flex;align-items: center;justify-content: space-between;width: 100%;margin-bottom: 20px;padding: 0 15px }
-		.user-pin_row{ display: flex;align-items: end;flex-wrap: wrap; }
-		
-	</style>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 <script>
