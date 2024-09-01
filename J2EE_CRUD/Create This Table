@@ -1,0 +1,11 @@
+Create table like this:
+
+CREATE TABLE student (
+  id int NOT NULL AUTO_INCREMENT,
+  name varchar(45) NOT NULL,
+  dob varchar(45) NOT NULL,
+  address varchar(45) NOT NULL,
+  qualification varchar(45) NOT NULL,
+  email varchar(45) NOT NULL,
+  PRIMARY KEY (id)
+);
