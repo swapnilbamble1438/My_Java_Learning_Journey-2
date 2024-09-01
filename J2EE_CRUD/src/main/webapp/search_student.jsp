@@ -194,7 +194,7 @@ function loadDetails(data,action){
 			
 				<div>
 					<label for="">Enter Name</label>
-					<input type="text" data-var='name' id="name" value="" class="lpay_input"></input> &ensp; <input type="button" onclick="renderTable()" value="Submit"></input>
+					<input type="text" id="name" value=""></input> &ensp; <input type="button" onclick="renderTable()" value="Submit"></input>
 				</div>
 			
 		<br>
